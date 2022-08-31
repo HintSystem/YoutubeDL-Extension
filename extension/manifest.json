@@ -1,0 +1,32 @@
+{
+    "manifest_version": 3,
+    "name": "Youtube Downloader",
+    "description": "An extension that lets you download videos for free from youtube.",
+    "version": "1.0",
+
+    "background": {
+        "service_worker": "background.js"
+    },
+
+    "action": {
+        "default_popup": "popup/popup.html"
+    },
+
+    "content_scripts": [
+        {
+            "matches": ["https://www.youtube.com/*"],
+            "js": ["YoutubeDLScript.js"],
+            "css": ["YoutubeDL.css"],
+            "run_at": "document_idle"
+        }
+    ],
+
+    "host_permissions": ["https://www.youtube.com/*"],
+
+    "web_accessible_resources": [{ 
+        "resources": ["/icons/marker-in.svg", "/icons/marker-out.svg", "/icons/marker-icon.svg", "/icons/download.svg", "/popup/Queued-Video.html", "YoutubeDLScript.js"],
+        "matches": ["<all_urls>"]
+      }],
+
+    "permissions": ["tabs", "storage", "scripting", "nativeMessaging"]
+}
