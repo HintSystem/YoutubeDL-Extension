@@ -1,0 +1,142 @@
+.YoutubeDL-Player-Button {
+    height: 28px;
+    width: auto;
+    margin: 1px;
+    padding: 7px;
+    user-select: none;
+}
+
+.YoutubeDL-Popup-Container {
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    z-index: 2023;
+    line-height: 20px;
+    text-size-adjust: 100%;
+    outline: none;
+    position: fixed;
+    line-height: initial;
+    box-sizing: border-box;
+}
+
+.YoutubeDL-Title-Header {
+    padding: 0 0 20px 0;
+}
+
+.YoutubeDL-Title {
+    color: var(--yt-spec-text-primary);
+    font-size: 1.6rem;
+}
+
+.YoutubeDL-Input-Container {
+    min-width: 200px;
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: auto auto 20px;
+}
+
+.YoutubeDL-Spacer {
+    color: var(--yt-spec-text-secondary);
+    margin: 0 var(--ytd-margin-2x);
+
+    font-size: var(--ytd-mini-attribution-font-size);
+    font-weight: var(--ytd-mini-attribution-font-weight);
+    line-height: var(--ytd-mini-attribution-line-height);
+}
+
+.YoutubeDL-Input {
+    color: var(--yt-spec-text-primary);
+    background-color: transparent;
+    border: 1px solid var(--yt-spec-10-percent-layer);
+    border-radius: 4px;
+    outline: none;
+    margin: 1px;
+    padding: var(--ytd-margin-3x);
+    width: 100%;
+
+    text-align: center;
+    font-size: var(--ytd-subheadline-font-size);
+    font-weight: var(--ytd-subheadline-font-weight);
+    line-height: var(--ytd-subheadline-line-height);
+    letter-spacing: var(--ytd-subheadline-letter-spacing);
+
+    flex: 1;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.YoutubeDL-Input:focus {
+    border-color: var(--yt-spec-text-secondary);
+    border-width: 2px;
+    margin: 0;
+}
+
+.YoutubeDL-Popup-Buttons {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    border-top: 1px solid var(--yt-spec-10-percent-layer);
+    padding-top: 10px;
+}
+
+.YoutubeDL-OutputDir-Container {
+    padding: 0 0 0 16px;
+    margin-bottom: 16px;
+    border: 1px solid var(--yt-spec-10-percent-layer);
+    background-color: var(--yt-spec-general-background-a);
+    border-radius: 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.YoutubeDL-Dir-Text {
+    width: 100%;
+    color: var(--yt-spec-text-primary);
+    overflow-x: scroll;
+    white-space: nowrap;
+    background: transparent;
+    border: none;
+}
+
+.YoutubeDL-Dir-Text:focus {
+    outline: 2px solid rgb(62,166,255);
+}
+
+.YoutubeDL-Dir-Text::-webkit-scrollbar {
+    background: transparent;
+    height: 0px;
+}
+
+.YoutubeDL-OutputDir-Container .YoutubeDL-Button-Secondary {
+    color: rgb(62,166,255);
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.YoutubeDL-Button {
+    padding: 10px 16px;
+    border-radius: 2px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.YoutubeDL-Popup-Buttons .YoutubeDL-Button {
+    margin: 0 0 0 20px;
+    display: inline;
+}
+
+.YoutubeDL-Button-Label {
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.YoutubeDL-Button-Primary { background-color: var(--yt-spec-call-to-action); }
+
+.YoutubeDL-Button-Secondary { background-color: transparent; }
+.YoutubeDL-Button-Secondary .YoutubeDL-Button-Label { color: rgb(62,166,255); }
